@@ -1,0 +1,428 @@
+Script started on 2018-10-26 00:49:45-06:00
+]0;ali.akbari2@csa1:~ali.akbari2@csa1:~$ exitgdb assign3cc -g -o assign3  assign3.s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pm4 assign3.asm >[C[C[C[C[C[C[C[C[C[C
+]0;ali.akbari2@csa1:~ali.akbari2@csa1:~$ m4 assign3.asm > assign3.s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kgdb assign3cc -g -o assign3  assign3.s
+]0;ali.akbari2@csa1:~ali.akbari2@csa1:~$ gcc -g -o assign3  assign3.s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pm4 assign3.asm >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kgdb assign3
+GNU gdb (GDB) Fedora 8.1.1-3.fc28
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from assign3...done.
+(gdb) b gdb [KUnsortedPrint
+Breakpoint 1 at 0x4006d4: file assign3.s, line 67.
+(gdb) b o[KprintTest
+Breakpoint 2 at 0x400788: file assign3.s, line 133.
+(gdb) r
+Starting program: /home/ugc/ali.akbari2/assign3 
+warning: the debug information found in "/usr/lib/debug//usr/lib64/ld-2.27.so.debug" does not match "/lib/ld-linux-aarch64.so.1" (CRC mismatch).
+
+Missing separate debuginfos, use: dnf debuginfo-install glibc-2.27-32.fc28.aarch64
+warning: the debug information found in "/usr/lib/debug//lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+v[0]: 105
+v[1]: 44
+v[2]: 94
+v[3]: 121
+v[4]: 50
+v[5]: 123
+v[6]: 8
+v[7]: 198
+v[8]: 112
+v[9]: 114
+v[10]: 246
+v[11]: 77
+v[12]: 87
+v[13]: 220
+v[14]: 54
+v[15]: 241
+v[16]: 199
+v[17]: 35
+v[18]: 57
+v[19]: 158
+v[20]: 246
+v[21]: 119
+v[22]: 24
+v[23]: 136
+v[24]: 219
+v[25]: 187
+v[26]: 190
+v[27]: 127
+v[28]: 233
+v[29]: 230
+v[30]: 209
+v[31]: 82
+v[32]: 18
+v[33]: 47
+v[34]: 203
+v[35]: 68
+v[36]: 170
+v[37]: 211
+v[38]: 10
+v[39]: 26
+v[40]: 69
+v[41]: 0
+v[42]: 104
+v[43]: 157
+v[44]: 220
+v[45]: 158
+v[46]: 142
+v[47]: 163
+v[48]: 193
+v[49]: 200
+
+Breakpoint 1, gdbUnsortedPrint () at assign3.s:67
+67		mov	w19, 1									//Initialize w19 to 0 for next loop 
+(gdb) x/50d $fp+28
+0xfffffffff1ec:	105	44	94	121
+0xfffffffff1fc:	50	123	8	198
+0xfffffffff20c:	112	114	246	77
+0xfffffffff21c:	87	220	54	241
+0xfffffffff22c:	199	35	57	158
+0xfffffffff23c:	246	119	24	136
+0xfffffffff24c:	219	187	190	127
+0xfffffffff25c:	233	230	209	82
+0xfffffffff26c:	18	47	203	68
+0xfffffffff27c:	170	211	10	26
+0xfffffffff28c:	69	0	104	157
+0xfffffffff29c:	220	158	142	163
+0xfffffffff2ac:	193	200
+(gdb) c
+Continuing.
+
+Sorted Array:
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) cx/50d $fp+28
+0xfffffffff1ec:	0	8	10	18
+0xfffffffff1fc:	24	26	35	44
+0xfffffffff20c:	47	50	54	57
+0xfffffffff21c:	68	69	77	82
+0xfffffffff22c:	87	94	104	105
+0xfffffffff23c:	112	114	119	121
+0xfffffffff24c:	123	127	136	142
+0xfffffffff25c:	157	158	158	163
+0xfffffffff26c:	170	187	190	193
+0xfffffffff27c:	198	199	200	203
+0xfffffffff28c:	209	211	219	220
+0xfffffffff29c:	220	230	233	241
+0xfffffffff2ac:	246	246
+(gdb) c
+Continuing.
+v[0]: 0
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[1]: 8
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[2]: 10
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[3]: 18
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[4]: 24
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[5]: 26
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[6]: 35
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[7]: 44
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[8]: 47
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[9]: 50
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[10]: 54
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[11]: 57
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[12]: 68
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[13]: 69
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[14]: 77
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[15]: 82
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[16]: 87
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[17]: 94
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[18]: 104
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[19]: 105
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[20]: 112
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[21]: 114
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[22]: 119
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[23]: 121
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[24]: 123
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[25]: 127
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[26]: 136
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[27]: 142
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[28]: 157
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[29]: 158
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[30]: 158
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[31]: 163
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[32]: 170
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[33]: 187
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[34]: 190
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[35]: 193
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[36]: 198
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[37]: 199
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[38]: 200
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[39]: 203
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[40]: 209
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[41]: 211
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[42]: 219
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[43]: 220
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[44]: 220
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[45]: 230
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[46]: 233
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[47]: 241
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[48]: 246
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+v[49]: 246
+
+Breakpoint 2, printTest () at assign3.s:133
+133		cmp	w19, size
+(gdb) c
+Continuing.
+[Inferior 1 (process 2037) exited normally]
+(gdb) q
+]0;ali.akbari2@csa1:~ali.akbari2@csa1:~$ exit
+exit
+
+Script done on 2018-10-26 00:53:28-06:00

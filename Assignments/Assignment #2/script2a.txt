@@ -1,0 +1,217 @@
+[1]+  Stopped                 emacs Script.txt
+ali.akbari2@csa1:~$ vim Script.txt
+ali.akbari2@csa1:~$ Script.txt
+-bash: Script.txt: command not found
+ali.akbari2@csa1:~$ vim Script.txt
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>^M
+This is free software: you are free to change and redistribute it.^M
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"^M
+and "show warranty" for details.^M
+This GDB was configured as "aarch64-redhat-linux-gnu".^M
+Type "show configuration" for configuration details.^M
+For bug reporting instructions, please see:^M
+<http://www.gnu.org/software/gdb/bugs/>.^M
+Find the GDB manual and other documentation resources online at:^M
+<http://www.gnu.org/software/gdb/documentation/>.^M
+For help, type "help".^M
+Type "apropos word" to search for commands related to "word"...^M
+Reading symbols from assign2a...(no debugging symbols found)...done.^M
+(gdb) b test^M
+Breakpoint 1 at 0x400680^M
+(gdb) r^M
+Starting program: /home/ugc/ali.akbari2/assign2a ^M
+warning: the debug information found in "/usr/lib/debug//usr/lib64/ld-2.27.so.debug" does not match "/lib/ld-linux-aarch64.so.1" (CRC mismatch).^M
+^M
+Missing separate debuginfos, use: dnf debuginfo-install glibc-2.27-32.fc28.aarch64^M
+warning: the debug information found in "/usr/lib/debug//lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).^M
+^M
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).^M
+^M
+^M
+Multiplier = 0x00000046 70, Multiplicand = 0xfefefefe -16843010 ^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) p/d $w20^M
+$1 = 4278124286^M
+(gdb) p/d $w20^H^[[K^H^[[K^H^[[Kw19^M
+$2 = 35^M
+(gdb) p/d $w19^H^[[K^H^[[K21^M
+$3 = 0^M
+(gdb) p/d $w21^H^[[K22^H^[[K^M
+$4 = 1^M
+(gdb) p/d $w22^H^[[K3^M
+$5 = 0^M
+(gdb) p/d $w23^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[Kc^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^Hp/d $w23^H^[[K^H^[[K19^M
+$6 = 17^M
+(gdb) p/d $w19^H^[[K^H^[[K20^M
+$7 = 4278124286^M
+(gdb) p/d $w20^H^[[K^H^[[K21^M
+$8 = 4286545791^M
+(gdb) p/d $w21^H^[[K2^M
+$9 = 2^M
+(gdb) p/d $w22^H^[[K3^M
+$10 = 0^M
+(gdb) p/d $w23^H2^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^G^G^G^G^G^G^G^Gc^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^Hp/d $w23^H^[[K^H^[[K19^M
+$11 = 2147483656^M
+(gdb) p/d $w19^H^[[K^H^[[K20^M
+$12 = 4278124286^M
+(gdb) p/d $w20^H^[[K1^M
+$13 = 4282335038^M
+(gdb) p/d $w21^H^[[K3^M
+$14 = 0^M
+(gdb) p/d $w23^H^[[K2^M
+$15 = 3^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^Hp/d $w22^H^[[K^H^[[K19^M
+$16 = 1073741828^M
+(gdb) p/d $w19^H^[[K^H^[[K20^M
+$17 = 4278124286^M
+(gdb) p/d $w20^H^H19^H^H20^H^[[K1^M
+$18 = 4288651167^M
+(gdb) p/d $w21^H^[[K2^M
+$19 = 4^M
+(gdb) p/d $w22^H^[[K3^M
+$20 = 0^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^Hp/d $w23^M^[[C^[[C^[[C^[[C^[[C^[[Cc^[[K^Hp/d $w23^H^[[K^H^[[K19^M
+$21 = 2684354562^M
+(gdb) p/d $w19^H^[[K^H^[[K20^M
+$22 = 4278124286^M
+(gdb) p/d $w20^H^H19^H^H20^H^[[K1^M
+$23 = 4291809231^M
+(gdb) p/d $w21^H^[[K2^M
+$24 = 5^M
+(gdb) p/d $w22^H^[[K3^M
+$25 = 0^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^M
+Continuing.^M
+^M
+Breakpoint 1, 0x0000000000400680 in test ()^M
+(gdb) c^M
+Continuing.^M
+Product = 0xffffffff,   multiplier = 0xb9b9b974^M
+64-bit result = 0x%0161 (-1179010700)^M
+[Inferior 1 (process 24327) exited normally]^M
+(gdb) q^M
+^[]0;ali.akbari2@csa1:~^Gali.akbari2@csa1:~$ exit^M
+exit^M
+
+Script done on 2018-10-12 14:13:53-06:00

@@ -1,0 +1,13 @@
+Script started on 2018-11-30 08:58:48-07:00
+]0;ali.akbari2@csa2:~ali.akbari2@csa2:~$ m4 a5b.asm > a5b.s
+]0;ali.akbari2@csa2:~ali.akbari2@csa2:~$ gcc a5b.s -o a5b
+]0;ali.akbari2@csa2:~ali.akbari2@csa2:~$ ./a5b 12 21
+December 21st is Winter
+]0;ali.akbari2@csa2:~ali.akbari2@csa2:~$ ./a5b 12[K[K9[K09 3
+September 3rd is Summer
+]0;ali.akbari2@csa2:~ali.akbari2@csa2:~$ ./a5b 04 1
+April 1st is Spring
+]0;ali.akbari2@csa2:~ali.akbari2@csa2:~$ exit
+exit
+
+Script done on 2018-11-30 09:01:03-07:00

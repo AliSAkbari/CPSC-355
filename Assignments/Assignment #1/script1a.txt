@@ -1,0 +1,239 @@
+Script started on 2018-09-27 22:03:58-06:00
+]0;ali.akbari2@csa1:~ali.akbari2@csa1:~$ exitgcc -o assign1a  assign1a.s
+]0;ali.akbari2@csa1:~ali.akbari2@csa1:~$ gdb assin[Kgn1a assign1a.s
+GNU gdb (GDB) Fedora 8.1.1-3.fc28
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from assign1a...(no debugging symbols found)...done.
+"/home/ugc/ali.akbari2/assign1a.s" is not a core dump: File format not recognized
+(gdb) b main
+Breakpoint 1 at 0x4005dc
+(gdb) display/i $pc
+1: x/i $pc
+<error: No registers.>
+(gdb) r
+Starting program: /home/ugc/ali.akbari2/assign1a 
+warning: the debug information found in "/usr/lib/debug//usr/lib64/ld-2.27.so.debug" does not match "/lib/ld-linux-aarch64.so.1" (CRC mismatch).
+
+Missing separate debuginfos, use: dnf debuginfo-install glibc-2.27-32.fc28.aarch64
+warning: the debug information found in "/usr/lib/debug//lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+
+Breakpoint 1, 0x00000000004005dc in main ()
+1: x/i $pc
+=> 0x4005dc <main+8>:	mov	x19, #0xffffffffffffff9c    	// #-100
+(gdb) ni
+0x00000000004005e0 in main ()
+1: x/i $pc
+=> 0x4005e0 <main+12>:	mov	x20, #0xfffffffffffffffb    	// #-5
+(gdb) p/d $x19
+$1 = -100
+(gdb) p/d $x19[C[C[C[C[C[Cni[K
+0x00000000004005e4 in main ()
+1: x/i $pc
+=> 0x4005e4 <main+16>:	mov	x21, #0xffffffffffffffe1    	// #-31
+(gdb) nip/d $x19[K[K20
+$2 = -5
+(gdb) p/d $x20[C[C[C[C[C[Cni[K
+0x00000000004005e8 in main ()
+1: x/i $pc
+=> 0x4005e8 <main+20>:	mov	x22, #0x4                   	// #4
+(gdb) nip/d $x20[K1
+$3 = -31
+(gdb) p/d $x21[C[C[C[C[C[Cni[K
+0x00000000004005ec in main ()
+1: x/i $pc
+=> 0x4005ec <main+24>:	mov	x23, #0xfffffffffffffffa    	// #-6
+(gdb) nip/d $x21[K2
+$4 = 4
+(gdb) p/d $x22[C[C[C[C[C[Cni[K
+0x00000000004005f0 in main ()
+1: x/i $pc
+=> 0x4005f0 <main+28>:	mov	x24, #0x0                   	// #0
+(gdb) nip/d $x22[K3
+$5 = -6
+(gdb) p/d $x23[C[C[C[C[C[Cni[K
+0x00000000004005f4 in main ()
+1: x/i $pc
+=> 0x4005f4 <main+32>:	mov	x25, #0x0                   	// #0
+(gdb) nip/d $x23[K4
+$6 = 0
+(gdb) p/d $x24[C[C[C[C[C[Cni[K
+0x00000000004005f8 in top ()
+1: x/i $pc
+=> 0x4005f8 <top>:	cmp	x23, #0x5
+(gdb) nip/d $x24[K5
+$7 = 0
+(gdb) p/d $x25[C[C[C[C[C[Cni[K
+0x00000000004005fc in top ()
+1: x/i $pc
+=> 0x4005fc <top+4>:	b.gt	0x400668 <test>
+(gdb) ni
+0x0000000000400600 in top ()
+1: x/i $pc
+=> 0x400600 <top+8>:	mul	x24, x23, x23
+(gdb) ni
+0x0000000000400604 in top ()
+1: x/i $pc
+=> 0x400604 <top+12>:	mul	x24, x24, x23
+(gdb) nip/d $x25[C[C[C[C[C[Cni[Kp/d $x25[K4
+$8 = 36
+(gdb) p/d $x24[C[C[C[C[C[Cni[K
+0x0000000000400608 in top ()
+1: x/i $pc
+=> 0x400608 <top+16>:	mul	x24, x24, x20
+(gdb) nip/d $x24
+$9 = -216
+(gdb) p/d $x24[C[C[C[C[C[Cni[K
+0x000000000040060c in top ()
+1: x/i $pc
+=> 0x40060c <top+20>:	add	x25, x25, x24
+(gdb) nip/d $x24
+$10 = 1080
+(gdb) p/d $x24[C[C[C[C[C[Cni[K
+0x0000000000400610 in top ()
+1: x/i $pc
+=> 0x400610 <top+24>:	mov	x24, #0x0                   	// #0
+(gdb) nip/d $x24[K5
+$11 = 1080
+(gdb) p/d $x25[C[C[C[C[C[Cni[K
+0x0000000000400614 in top ()
+1: x/i $pc
+=> 0x400614 <top+28>:	mul	x24, x23, x23
+(gdb) nip/d $x25[C[C[C[C[C[Cni[Kp/d $x25[K4
+$12 = 0
+(gdb) p/d $x24[C[C[C[C[C[Cni[K
+0x0000000000400618 in top ()
+1: x/i $pc
+=> 0x400618 <top+32>:	mul	x24, x24, x21
+(gdb) nip/d $x24
+$13 = 36
+(gdb) p/d $x24[C[C[C[C[C[Cni[K
+0x000000000040061c in top ()
+1: x/i $pc
+=> 0x40061c <top+36>:	add	x25, x25, x24
+(gdb) nip/d $x24
+$14 = -1116
+(gdb) p/d $x24[C[C[C[C[C[Cni[K
+0x0000000000400620 in top ()
+1: x/i $pc
+=> 0x400620 <top+40>:	mov	x24, #0x0                   	// #0
+(gdb) nip/d $x24[K5
+$15 = -36
+(gdb) p/d $x25[C[C[C[C[C[Cni[K
+0x0000000000400624 in top ()
+1: x/i $pc
+=> 0x400624 <top+44>:	mul	x24, x22, x23
+(gdb) nip/d $x25[K4
+$16 = 0
+(gdb) p/d $x24[C[C[C[C[C[Cni[K
+0x0000000000400628 in top ()
+1: x/i $pc
+=> 0x400628 <top+48>:	add	x25, x25, x24
+(gdb) nip/d $x24
+$17 = -24
+(gdb) p/d $x24[C[C[C[C[C[Cni[K
+0x000000000040062c in top ()
+1: x/i $pc
+=> 0x40062c <top+52>:	sub	x25, x25, x21
+(gdb) nip/d $x24[K5
+$18 = -60
+(gdb) p/d $x25[C[C[C[C[C[Cni[K
+0x0000000000400630 in top ()
+1: x/i $pc
+=> 0x400630 <top+56>:	cmp	x19, x25
+(gdb) nip/d $x25
+$19 = -29
+(gdb) p/d $x25[C[C[C[C[C[Cni[K
+0x0000000000400634 in top ()
+1: x/i $pc
+=> 0x400634 <top+60>:	b.lt	0x40063c <changeMax>  // b.tstop
+(gdb) ni
+0x000000000040063c in changeMax ()
+1: x/i $pc
+=> 0x40063c <changeMax>:	mov	x19, x25
+(gdb) nip/d $x25[K[K19
+$20 = -100
+(gdb) p/d $x19[C[C[C[C[C[Cni[K
+0x0000000000400640 in print ()
+1: x/i $pc
+=> 0x400640 <print>:	mov	x1, x23
+(gdb) nip/d $x19
+$21 = -29
+(gdb) p/d $x19[C[C[C[C[C[Cni[K
+0x0000000000400644 in print ()
+1: x/i $pc
+=> 0x400644 <print+4>:	mov	x2, x25
+(gdb) nip/d $x19[K[K1
+$22 = -6
+(gdb) p/d $x1ni[K
+0x0000000000400648 in print ()
+1: x/i $pc
+=> 0x400648 <print+8>:	mov	x3, x19
+(gdb) nip/d $x1[K2
+$23 = -29
+(gdb) p/d $x2ni[K
+0x000000000040064c in print ()
+1: x/i $pc
+=> 0x40064c <print+12>:	adrp	x0, 0x400000
+(gdb) nip/d $x2[K3
+$24 = -29
+(gdb) p/d $x3ni[K
+0x0000000000400650 in print ()
+1: x/i $pc
+=> 0x400650 <print+16>:	add	x0, x0, #0x594
+(gdb) ni
+0x0000000000400654 in print ()
+1: x/i $pc
+=> 0x400654 <print+20>:	bl	0x400480 <printf@plt>
+(gdb) ni
+X value is: -6, Y value is: -29, The current Maximum is: -29 
+0x0000000000400658 in print ()
+1: x/i $pc
+=> 0x400658 <print+24>:	add	x23, x23, #0x1
+(gdb) ni
+0x000000000040065c in print ()
+1: x/i $pc
+=> 0x40065c <print+28>:	mov	x24, #0x0                   	// #0
+(gdb) ni
+0x0000000000400660 in print ()
+1: x/i $pc
+=> 0x400660 <print+32>:	mov	x25, #0x0                   	// #0
+(gdb) ni
+0x0000000000400664 in print ()
+1: x/i $pc
+=> 0x400664 <print+36>:	b	0x4005f8 <top>
+(gdb) nip/d $x3[K23
+$25 = -5
+(gdb) c
+Continuing.
+X value is: -5, Y value is: -139, The current Maximum is: -29 
+X value is: -4, Y value is: -161, The current Maximum is: -29 
+X value is: -3, Y value is: -125, The current Maximum is: -29 
+X value is: -2, Y value is: -61, The current Maximum is: -29 
+X value is: -1, Y value is: 1, The current Maximum is: 1 
+X value is: 0, Y value is: 31, The current Maximum is: 31 
+X value is: 1, Y value is: -1, The current Maximum is: 31 
+X value is: 2, Y value is: -125, The current Maximum is: 31 
+X value is: 3, Y value is: -371, The current Maximum is: 31 
+X value is: 4, Y value is: -769, The current Maximum is: 31 
+X value is: 5, Y value is: -1349, The current Maximum is: 31 
+[Inferior 1 (process 11799) exited normally]
+(gdb) q
+]0;ali.akbari2@csa1:~ali.akbari2@csa1:~$ exit
+exit
+
+Script done on 2018-09-27 22:10:38-06:00

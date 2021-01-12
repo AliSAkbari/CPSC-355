@@ -1,0 +1,74 @@
+Script started on 2018-11-09 00:15:53-07:00
+]0;ali.akbari2@csa1:~ali.akbari2@csa1:~$ exitgdb assign4cc -o assign4  assign4.s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@m4 assign4.asm >[C[C[C[C[C[C[C[C[C[C
+]0;ali.akbari2@csa1:~ali.akbari2@csa1:~$ m4 assign4.asm > assign4.s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kgdb assign4cc -o assign4  assign4.s
+]0;ali.akbari2@csa1:~ali.akbari2@csa1:~$ gcc -o assign4  assign4.s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@m4 assign4.asm >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kgdb assign4
+GNU gdb (GDB) Fedora 8.1.1-3.fc28
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from assign4...(no debugging symbols found)...done.
+(gdb) b firstBreak
+Breakpoint 1 at 0x400654
+(gdb) b end Main[1PMain
+Breakpoint 2 at 0x400684
+(gdb) display/i $pc
+1: x/i $pc
+<error: No registers.>
+(gdb) r
+Starting program: /home/ugc/ali.akbari2/assign4 
+warning: the debug information found in "/usr/lib/debug//usr/lib64/ld-2.27.so.debug" does not match "/lib/ld-linux-aarch64.so.1" (CRC mismatch).
+
+Missing separate debuginfos, use: dnf debuginfo-install glibc-2.27-32.fc28.aarch64
+warning: the debug information found in "/usr/lib/debug//lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+Initial box values:
+Box first origin = (0, 0) width = 1 height = 1 area = 1
+Box second origin = (0, 0) width = 1 height = 1 area = 1
+
+Breakpoint 1, 0x0000000000400654 in firstBreak ()
+1: x/i $pc
+=> 0x400654 <firstBreak+8>:	bl	0x400744 <equal>
+(gdb) x/5d $fp+16
+0xfffffffff190:	0	0	1	1
+0xfffffffff1a0:	1
+(gdb) x/5d $fp+16[C[1P636
+0xfffffffff1a4:	0	0	1	1
+0xfffffffff1b4:	1
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400684 in endMain ()
+1: x/i $pc
+=> 0x400684 <endMain+8>:	bl	0x400480 <printf@plt>
+(gdb) cx/5d $fp+36[1P616
+0xfffffffff190:	-5	7	1	1
+0xfffffffff1a0:	1
+(gdb) x/5d $fp+16[K[K36
+0xfffffffff1a4:	0	0	3	3
+0xfffffffff1b4:	9
+(gdb) c
+Continuing.
+
+Changed box values: 
+Box first origin = (-5, 7) width = 1 height = 1 area = 1
+Box second origin = (0, 0) width = 3 height = 3 area = 9
+[Inferior 1 (process 23628) exited with code 071]
+(gdb) c
+The program is not being run.
+(gdb) q
+]0;ali.akbari2@csa1:~ali.akbari2@csa1:~$ exit
+exit
+
+Script done on 2018-11-09 00:18:41-07:00

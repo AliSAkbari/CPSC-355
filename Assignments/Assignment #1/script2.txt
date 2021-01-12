@@ -1,0 +1,238 @@
+Script started on 2018-10-11 17:19:08-06:00
+]0;ali.akbari2@csa1:~ali.akbari2@csa1:~$ [Kali.akbari2@csa1:~$ exit./assign2agcc -o assign2a  assign2a.s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@m4 assign2a.asm >[C[C[C[C[C[C[C[C[C[C[C
+]0;ali.akbari2@csa1:~ali.akbari2@csa1:~$ m4 assign2a.asm > assign2a.s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K./assign2agcc -o assign2a  assign2a.s
+]0;ali.akbari2@csa1:~ali.akbari2@csa1:~$ gs[Kdb assign2s[Ka
+GNU gdb (GDB) Fedora 8.1.1-3.fc28
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from assign2a...(no debugging symbols found)...done.
+(gdb) b test
+Breakpoint 1 at 0x400680
+(gdb) r
+Starting program: /home/ugc/ali.akbari2/assign2a 
+warning: the debug information found in "/usr/lib/debug//usr/lib64/ld-2.27.so.debug" does not match "/lib/ld-linux-aarch64.so.1" (CRC mismatch).
+
+Missing separate debuginfos, use: dnf debuginfo-install glibc-2.27-32.fc28.aarch64
+warning: the debug information found in "/usr/lib/debug//lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+
+Multiplier = 0x00000046 70, Multiplicand = 0xfefefefe -16843010 
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) p/d $w19
+$1 = 35
+(gdb) p/d $w19[K[K20
+$2 = 4278124286
+(gdb) p/d $w20[K[K21
+$3 = 0
+(gdb) p/d $w210[K[K22
+$4 = 1
+(gdb) p/d $w22[K[K23
+$5 = 0
+(gdb) p/d $w23[K[K[Kx24
+$6 = 0
+(gdb) p/d $x24[K[K25
+$7 = 0
+(gdb) p/d $x25[K[K26
+$8 = 0
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) cp/d $x26[K[K[Kw19
+$9 = 17
+(gdb) p/d $w19[K[K20
+$10 = 4278124286
+(gdb) p/d $w20[K1
+$11 = 4286545791
+(gdb) p/d $w21[K2
+$12 = 2
+(gdb) p/d $w22[K3
+$13 = 0
+(gdb) p/d $w23[K[K[Kx24
+$14 = 0
+(gdb) p/d $x24[K5
+$15 = 0
+(gdb) p/d $x25[K6
+$16 = 0
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) cp/d $x26[K[K[Kw19
+$17 = 2147483656
+(gdb) p/d $w19[K[K20
+$18 = 4278124286
+(gdb) p/d $w20[K1
+$19 = 4282335038
+(gdb) p/d $w21[K2
+$20 = 3
+(gdb) p/d $w22[K3
+$21 = 0
+(gdb) p/d $w232[K[K[Kx24
+$22 = 0
+(gdb) p/d $x24[K5
+$23 = 0
+(gdb) p/d $x25[K6
+$24 = 0
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) cp/d $x26[K[K[Kw19
+$25 = 1073741828
+(gdb) p/d $w19[K[K20
+$26 = 4278124286
+(gdb) p/d $w20[K[K21
+$27 = 4288651167
+(gdb) p/d $w21[K2
+$28 = 4
+(gdb) p/d $w22[K3
+$29 = 0
+(gdb) p/d $w23[K[K[Kx24
+$30 = 0
+(gdb) p/d $x24[K
+$31 = 8285548145280099584
+(gdb) p/d $x2[K5
+$32 = 4330145
+(gdb) p/d $x5[K24
+$33 = 0
+(gdb) p/d $x24[K6
+$34 = 0
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400680 in test ()
+(gdb) c
+Continuing.
+Product = 0xffffffff,	multiplier = 0xb9b9b974
+64-bit result = 0x%0161 (-1179010700)
+[Inferior 1 (process 12614) exited normally]
+(gdb) c
+The program is not being run.
+(gdb) c[Kquit
+]0;ali.akbari2@csa1:~ali.akbari2@csa1:~$ exit
+exit
+
+Script done on 2018-10-11 17:24:48-06:00

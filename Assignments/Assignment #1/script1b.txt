@@ -1,0 +1,55 @@
+Script started on 2018-09-27 22:23:43-06:00
+]0;ali.akbari2@csa1:~ali.akbari2@csa1:~$ exitgdb assign1b assign1b.s[4@cc -o assign1b [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@m4 assign1b.asm >[C[C[C[C[C[C[C[C[C[C[C
+]0;ali.akbari2@csa1:~ali.akbari2@csa1:~$ m4 assign1b.asm > assign1b.s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kgdb assign1b assign1b.s[4@cc -o assign1b [C[C[C[C[C[C[C[C[C[C[C
+]0;ali.akbari2@csa1:~ali.akbari2@csa1:~$ gcc -o assign1b  assign1b.s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@m4 assign1b.asm >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kgdb assign1b assign1b.s
+GNU gdb (GDB) Fedora 8.1.1-3.fc28
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from assign1b...(no debugging symbols found)...done.
+"/home/ugc/ali.akbari2/assign1b.s" is not a core dump: File format not recognized
+(gdb) b final
+Breakpoint 1 at 0x400668
+(gdb) r
+Starting program: /home/ugc/ali.akbari2/assign1b 
+warning: the debug information found in "/usr/lib/debug//usr/lib64/ld-2.27.so.debug" does not match "/lib/ld-linux-aarch64.so.1" (CRC mismatch).
+
+Missing separate debuginfos, use: dnf debuginfo-install glibc-2.27-32.fc28.aarch64
+warning: the debug information found in "/usr/lib/debug//lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+X value is: -6, Y value is: -29, The current Maximum is: -29 
+X value is: -5, Y value is: -139, The current Maximum is: -29 
+X value is: -4, Y value is: -161, The current Maximum is: -29 
+X value is: -3, Y value is: -125, The current Maximum is: -29 
+X value is: -2, Y value is: -61, The current Maximum is: -29 
+X value is: -1, Y value is: 1, The current Maximum is: 1 
+X value is: 0, Y value is: 31, The current Maximum is: 31 
+X value is: 1, Y value is: -1, The current Maximum is: 31 
+X value is: 2, Y value is: -125, The current Maximum is: 31 
+X value is: 3, Y value is: -371, The current Maximum is: 31 
+X value is: 4, Y value is: -769, The current Maximum is: 31 
+X value is: 5, Y value is: -1349, The current Maximum is: 31 
+
+Breakpoint 1, 0x0000000000400668 in final ()
+(gdb) p/d[K(gdb) p/d $x19
+$1 = 31
+(gdb) c
+Continuing.
+[Inferior 1 (process 12945) exited normally]
+(gdb) q
+]0;ali.akbari2@csa1:~ali.akbari2@csa1:~$ exit
+exit
+
+Script done on 2018-09-27 22:25:00-06:00
