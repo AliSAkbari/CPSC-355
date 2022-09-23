@@ -11,4 +11,4 @@ Prerequisite(s):
 
 Instructor: Leonard Manzara   
 TA:  
-Overall grade: A-  
+
